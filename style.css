@@ -15,6 +15,12 @@ a {
     color: var(--mediumgray);
 }
 
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -23,87 +29,120 @@ a {
     font-family: 'Epilogue', sans-serif;
 }
 
+.nav-bar a:hover {
+    color: var(--almostblack);
+}
+
 .navigation {
     display: flex;
-    padding: 32px 40px;
+    padding-top: 32px;
+    padding-left: 40px;
 }
 
 .logo {
-    padding-right: 62px;
+    margin-right: 62px;
 }
 
 .navigation li {
     display: inline-block;
     list-style: none;
     padding-top: 2px;
-    padding-right: 35px;
+    margin-right: 2.25rem;
     letter-spacing: -0.5px;
 }
 
+.navigation li:last-child {
+    margin-right: 0;
+}
+
 .login {
-    padding: 33px 40px;
+    padding-top: 34px;
+    padding-right: 40px;
 }
 
 .register-btn {
-    padding: 12px 20px;
-    border: 1px solid var(--almostblack);
+    padding: 13px 21px;
+    border: 1px solid var(--mediumgray);
     border-radius: 15px;
+    font-size: 0.9rem;
 }
 
-
+.register-btn:hover {
+    color: var(--almostblack);
+    border-color: var(--almostblack);
+}
 
 .login-btn {
-    padding: 12px 38px;
+    margin: 12px 37px;
+}
+
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    translate: 18px;
 }
 
 .hero-section {
     display: flex;
-    max-width: 1140px;
-    margin: 0 9% 0 11.5%;
+    justify-content: space-between;
+    min-width: 1145px;
     font-family: 'Epilogue', sans-serif;
 }
 
+.hero-section img {
+    margin-bottom: 20px;
+}
 
 .hero-text {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .clients {
+    position: relative;
+    top: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 475px;
+    max-width: 480px;
+    margin-bottom: 0;
 }
 
 .heading {
     font-size: 5rem;
-    margin-right: 130px;
-    margin-top: 105px;
+    margin-top: 102px;
+    max-width: 520px;
+    letter-spacing: -1px;
 }
 
 .hero-description {
-    width: 425px;
-    line-height: 1.5;
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+    max-width: 430px;
+    line-height: 1.55;
+    font-size: 1.130rem;
+    margin-bottom: 5px;
+    /* letter-spacing: 1px; */
 }    
 
 .learn-more {
-    padding: 20px 32px; 
+    padding: 19px 28px 17px 31px; 
     border: 1px solid var(--almostblack);
     border-radius: 15px;
     align-self: start;
     background-color: var(--almostblack);
     color: var(--almostwhite);
-    margin-bottom: 40px;
+    margin-bottom: 52px;
     font-size: 18px;
 }
 
 .learn-more:hover {
     background-color: var(--almostwhite);
     color: var(--almostblack);
+    font-weight: 700;
+    padding-right: 26px;
+    padding-left: 30px;
 }
 
 .attribution {

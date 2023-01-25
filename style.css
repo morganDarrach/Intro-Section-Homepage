@@ -26,6 +26,7 @@ body {
 }
 
 .nav-bar {
+    background-color: var(--almostwhite);
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -41,7 +42,7 @@ body {
 .links-container {
     display: flex;
     justify-content: space-between;
-     width: 89%;
+    width: 89%;
 }
 
 .navigation {
@@ -258,6 +259,16 @@ body {
     color: hsl(228, 45%, 44%);
   }
 
+  .show-feature {
+    display: flex;
+}
+
+.show-company {
+    display: flex;
+}
+
+
+
   @media screen and (max-width: 1180px) {
     .hero-section {
         justify-content: center;
@@ -269,6 +280,11 @@ body {
   }
 
   @media screen and (max-width: 865px) {
+     body {
+        min-height: 100vh;
+    }
+
+
     .hero-section {
         display: flex;
         flex-direction: column;
@@ -285,34 +301,24 @@ body {
     }
 
     .container {
-        
+        min-height: 100vh;
         overflow-x: hidden;
     }
 
     .links-container {
         position: absolute;
-        top: 0;
+        top: 75px;
         right: 0;
         display: block;
-        z-index: 1;
+        z-index: 6;
         min-height: 100vh;
-        width: 66%;
+        width: 64%;
         margin-right: 0;
         background-color: var(--almostwhite);
+        transition: all 0.5s ease-in-out;
         translate: 100%;
     }
 
-    .nav-bar ul li {
-        display: block;
-    }
-
-    .nav-bar .login a {
-        display: block;
-    }
-   
-  }
-
-  @media screen and (max-width: 375px) {
     .logo {
         margin: 24px 17px;
     }
@@ -322,13 +328,45 @@ body {
     }
 
     .nav-bar {
+        z-index: 6;
         height: 75px;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .nav-links ul li {
+        margin-left: 10px;
+        font-size: 1rem;
+        margin-bottom: 23px;
+    }
+
+    .navigation {
+        padding-left: 12px;
+        padding-top: 0;
     }
 
     .heading {
         margin: 0;
         font-size: 2.3rem;
         margin-top: 25px;
+    }
+
+    .login {
+        padding: 0;
+        margin: uto;
+
+    }
+
+    .login a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 13px 20px;
     }
 
     .hero-description {
@@ -361,12 +399,64 @@ body {
         width: 100%;
         align-items: center;
     }
+
+    .show-feature-mobile {
+        display: flex;
+        box-shadow: none;
+        left: 20px;
+        top: 54px;
+    }
+
+    .show-feature-mobile ul li a span {
+        font-size: 1rem;
+    }
+
+    .feature-expand {
+        height: 200px;
+    }
+
+    .show-company-mobile {
+        display: flex;
+        position: relative;
+        box-shadow: none;
+        left: 0px;
+        top: 0px;
+        margin-top: 20px;
+        
+    }
+
+    .show-company-mobile ul li a span {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .show-nav {
+        translate: 0;
+    }
+
+    .toggle .line1 {
+        rotate: -45deg; 
+        translate: 0 8px;
+    }
+    
+    .toggle .line2 {
+        opacity: 0;
+    }
+    
+    .toggle .line3 {
+        rotate: 45deg;
+        translate: 0 -8px;
+    }
+
+    .shade-on {
+        position: absolute;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
   }
 
-.show-feature {
-    display: flex;
-}
 
-.show-company {
-    display: flex;
-}
+

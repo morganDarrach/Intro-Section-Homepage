@@ -18,8 +18,11 @@ a {
 body {
     position: relative;
     min-height: 100vh;
-    /* overflow: auto; */
     background-color: var(--almostwhite);
+}
+
+.container {
+    overflow: hidden;
 }
 
 .nav-bar {
@@ -38,19 +41,38 @@ body {
 .links-container {
     display: flex;
     justify-content: space-between;
-    
+     width: 89%;
 }
 
 .navigation {
     display: flex;
     padding-top: 32px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .logo {
-    position: absolute;
-    margin-right: 62px;
+    margin: 32px 41px;
+
 }
+
+.features {
+    cursor: pointer;
+}
+
+.features-content {
+    border-radius: 10px;
+    position: absolute;
+    left: 113px;
+    top: 70px;
+    width: 153px;
+    height: 160px;
+    background-color: var(--almostwhite);
+    box-shadow: 0 10px 50px  rgb(212, 212, 212) ;
+    z-index: 1;
+}
+
+
+
 
 .navigation li {
     display: inline-block;
@@ -85,6 +107,18 @@ body {
     margin: 12px 37px;
 }
 
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 32px;
+    height: 2px;
+    background-color: black;
+    margin: 6px;
+    transition: all 0.5s ease;
+}
+
 .hero-container {
     position: relative;
     display: flex;
@@ -109,6 +143,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .clients {
@@ -118,7 +153,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 480px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .heading {
@@ -151,8 +186,6 @@ body {
     background-color: var(--almostwhite);
     color: var(--almostblack);
     font-weight: 700;
-    padding-right: 26px;
-    padding-left: 30px;
 }
 
 
@@ -185,14 +218,18 @@ body {
         text-align: center;
     }
 
-   @media screen and (max-width: 375px) {
-    body {
-        overflow-x: hidden;
-        
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin: 32px 41px;
     }
 
-    
-    .nav-bar {
+    .container {
+        
+        overflow-x: hidden;
+    }
+
+    .links-container {
         position: absolute;
         top: 0;
         right: 0;
@@ -212,7 +249,56 @@ body {
     .nav-bar .login a {
         display: block;
     }
-   }
+   
+  }
 
+  @media screen and (max-width: 375px) {
+    .logo {
+        margin: 24px 17px;
+    }
 
+    .burger  {
+        margin: 19px 10px;
+    }
+
+    .nav-bar {
+        height: 75px;
+    }
+
+    .heading {
+        margin: 0;
+        font-size: 2.3rem;
+        margin-top: 25px;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-top: 18px;
+        max-width: 350px;
+        color: var(--mediumgray);
+        line-height: 1.6;
+    }
+
+    .learn-more {
+       align-self: center;
+       padding: 14px 21px;
+       font-size: 1rem;
+       margin-top: 20px;
+       margin-bottom: 35px;
+    }
+
+    .clients {
+        max-width: 375px;
+        gap: 5px;
+    }
+
+    .clients img {
+        scale: 70%;
+        
+    }
+
+    .hero-text {
+        width: 100%;
+        align-items: center;
+    }
   }

@@ -62,6 +62,9 @@ body {
 .features-content {
     border-radius: 10px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 113px;
     top: 70px;
     width: 153px;
@@ -71,7 +74,26 @@ body {
     z-index: 1;
 }
 
+.features-content ul {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: auto;
+}
 
+.features-content ul li {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.features-content ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 .navigation li {

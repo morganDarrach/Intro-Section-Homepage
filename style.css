@@ -62,8 +62,7 @@ body {
 .features-content {
     border-radius: 10px;
     position: absolute;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     left: 113px;
     top: 70px;
@@ -72,28 +71,70 @@ body {
     background-color: var(--almostwhite);
     box-shadow: 0 10px 50px  rgb(212, 212, 212) ;
     z-index: 1;
-}
-
-.features-content ul {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: auto;
+    display: none;
 }
 
 .features-content ul li {
-    
-    margin: 0;
-    padding: 0;
+    list-style: none;
+    margin: 6px;
 }
 
 .features-content ul li a {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    text-decoration: none;
 }
+
+.features-content ul li a img {
+    width:17px;
+    height: 17px;
+    margin: 0px 16px;
+}
+
+.features-content ul li a span {
+    font-size: 0.9rem;
+}
+
+
+
+.company-content {
+    border-radius: 10px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    left: 306px;
+    top: 70px;
+    width: 116px;
+    height: 128px;
+    background-color: var(--almostwhite);
+    box-shadow: 0 10px 50px  rgb(212, 212, 212) ;
+    z-index: 1;
+    display: none;
+}
+
+.company-content ul {
+    margin-bottom: 3px;
+}
+
+.company-content ul li {
+    list-style: none;
+    margin: 8px;
+}
+
+.company-content ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+}
+
+.company-content ul li a span {
+    font-size: 0.9rem;
+    margin-left: 18px;
+}
+
+
 
 
 .navigation li {
@@ -104,9 +145,6 @@ body {
     letter-spacing: -0.5px;
 }
 
-.navigation li:last-child {
-    margin-right: 0;
-}
 
 .login {
     padding-top: 34px;
@@ -230,7 +268,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 840px) {
+  @media screen and (max-width: 865px) {
     .hero-section {
         display: flex;
         flex-direction: column;
@@ -324,3 +362,11 @@ body {
         align-items: center;
     }
   }
+
+.show-feature {
+    display: flex;
+}
+
+.show-company {
+    display: flex;
+}

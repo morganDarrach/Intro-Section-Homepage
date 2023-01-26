@@ -244,12 +244,18 @@ main {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 700;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(281, 94%, 32%);
+}
+
+.attribution a:hover {
+    color: rgb(0, 115, 209);
 }
 
 .show-feature {

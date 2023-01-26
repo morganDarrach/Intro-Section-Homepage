@@ -26,8 +26,7 @@ body {
 }
 
 main {
-    position: relative;
-    top: 130px;
+    padding-top: 130px;
 }
 
 .container {
@@ -191,15 +190,20 @@ main {
     font-family: 'Epilogue', sans-serif;
 }
 
-.hero-section img {
-    margin-bottom: 20px;
-}
-
 .hero-text {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+.hero-image-desktop {
+    max-width: 100%;
+    height: auto;
 }
 
 .clients {
@@ -245,9 +249,8 @@ main {
 }
 
 .attribution {
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Epilogue', sans-serif;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -283,7 +286,18 @@ main {
     }
 
     main {
-        top: 75px;
+        padding-top: 75px;
+    }
+
+  
+
+    .hero-image-desktop {
+        display: none;
+        
+    }
+
+    .hero-image-mobile {
+        display: inline;
     }
 
     .hero-section {

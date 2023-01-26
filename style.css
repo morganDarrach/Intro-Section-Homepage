@@ -276,7 +276,7 @@ main {
     }
   }
 
-  @media screen and (max-width: 865px) {
+  @media screen and (max-width: 864px) {
      body {
         min-height: 100vh;
     }
@@ -374,6 +374,10 @@ main {
         max-width: 350px;
         color: var(--mediumgray);
         line-height: 1.6;
+    }
+
+    .hero-image-mobile {
+        width: 100%;
     }
 
     .learn-more {

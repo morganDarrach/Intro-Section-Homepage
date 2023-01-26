@@ -224,6 +224,7 @@ main {
     line-height: 1.55;
     font-size: 1.130rem;
     margin-bottom: 5px;
+    color: var(--mediumgray);
 }    
 
 .learn-more {
@@ -460,13 +461,7 @@ main {
     }
 
     .shade-on {
-        opacity: 0;
-        transition: all 0.5 ease-in-out;
-    }
-
-    .shade-on {
         position: absolute;
-        top: 75px;
         min-width: 100%;
         min-height: 100vh;
         background-color: rgba(0, 0, 0, 0.7);

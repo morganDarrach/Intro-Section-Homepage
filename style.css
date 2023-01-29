@@ -197,13 +197,11 @@ main {
     justify-content: space-between;
 }
 
-.hero-image-mobile {
-    display: none;
-}
-
-.hero-image-desktop {
-    max-width: 100%;
-    height: auto;
+.hero-image {
+    background-image: url('./images/image-hero-desktop.png');
+    width: 480px;
+    height: 640px;
+    background-size: cover;
 }
 
 .clients {
@@ -289,15 +287,11 @@ main {
         padding-top: 75px;
     }
 
-  
-
-    .hero-image-desktop {
-        display: none;
-        
-    }
-
-    .hero-image-mobile {
-        display: inline;
+    .hero-image {
+        background-image: url('./images/image-hero-mobile.png');
+        width: 375px;
+        height: 282px;
+        background-size: cover;
     }
 
     .hero-section {
